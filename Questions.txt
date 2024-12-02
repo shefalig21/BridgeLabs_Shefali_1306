@@ -1,0 +1,94 @@
+Questions:
+//28th Nov.24
+
+Q1. What is javascript. 
+Q2. Advantages and disadvantages of it.
+Q3. let var const difference.
+Q4. What is hoisting.
+Q5. What is excuetion context in javscript.
+Q6.. What is call Stack in javascript.(it is just like stack in java)
+(if will keep track which function is currently running)
+
+example:
+suppose 2 functions given A and B 
+function A(){
+
+}
+function B(){
+A();
+B();    
+//which function will run first  
+In memory stack first B will go and iside B ,A go it will go.
+First A will complete its exceution then only B will excute.
+
+}
+
+Q7. What is fucntion.
+Q8. What is function expression
+Q9. What is function statement.
+Q10. What is callback fucntion.
+(When passing function as argument to another function then called
+callback fucntion.)
+Q11. What is high Order funtcion.
+(The fucntion which accepts another fucntion as argument is called 
+high order function.)
+
+example:
+
+function ABC(a,b,CD)   //here CD is callback function and ABC is hof.
+{
+    return a+b;
+
+    var result=CD();
+
+}
+
+function CD(c,d)
+{
+    return c*d;
+
+}
+
+Q12. What are the ways use declare fucntion in javscript.
+Q13. What is arrow fucntion.
+Q13. Difference between arrow function and noraml function.
+Q14. What are ES 6 features in javascript.
+ES 6 ECMA Script Standards.6 is version.It came in 2015.
+Some features are:
+1.let and const
+2. arrow function 
+3. promise
+to handle asyncronus operations.
+(when first line is taking time to excute ,it goes to second line)
+ 
+** To handle asyncronous programming:
+We can use callback,promises and async
+
+4. String literals
+backtick and temphlate and multithreading.
+5. rest and spread operator
+(Difference between them should know)
+6. classes
+7. desconstructing (used in arrays,objects to access value directly with desctruring)
+8. default parameters
+
+example:
+function ABC(a=30,b=20){
+    return a+b;
+    
+}
+
+ABC(20);
+Output=40
+
+
+Q15.  What is closures in javascript.
+(basically we can use varibale of outer function inside inner function)  )
+I can use variable decalred in outer function and also inside inner function but not outside outer function.
+
+Q16. Latest version of javascript currently going.
+Ans. Currently 15 version.
+
+Q17. Implement and know all features from ES6 to ES 14.
+do code and logic for all features.(different way to do that particular thing)
+
