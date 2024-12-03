@@ -77,3 +77,39 @@ function countVowels(str)
     
 }
 countVowels("Shefali");
+
+/*
+using for op loop:
+
+function countVowels(str)
+{
+    let count=0;
+    for(let char of str)
+    {
+        if(char==="a"||char==="e"||char==="i"||char==="o"||char==="u"||char==="A"||char==="E"||char==="I"||char==="O"||char==="U"){
+            count++;
+        }
+    }
+    console.log(count);
+}
+countVowels("Apna Shefali");
+
+using arrow function same task:
+
+const countVow=(str)=>{
+    let count=0;
+    for(let i=0;i<str.length;i++)
+    {
+        if(str[i]==="a"||str[i]==="e"||str[i]==="i"||str[i]==="o"||str[i]==="u"||str[i]==="A"||str[i]==="E"||str[i]==="I"||str[i]==="O"||str[i]==="U")
+        {
+            count++;
+            
+        }
+    }
+    console.log(count);
+}
+countVow("Shefali");
+
+*/
+
+
