@@ -1,0 +1,241 @@
+Node.js:
+
+Node.js is runtime environment,that allows you to execute JavaScript code on server side. 
+Features:
+1. Asynchronous and non-blocking:  means it can handle multiple requests simultaneously without waiting for one to finish before starting the next.
+2. Single threaded: means it can handle many connections at once without the overhead of creating multiple threads.
+3. Cross-platform: can run on various platforms like windows,linux and macOS.
+4. npm: it comes with npm,a vast package manager that provides access to vast ecosystem of open-source libraries and tools.
+5. Real time Aaplication:excels in building real time applications like chat apps,online gaming etc.(due to its ability to handle many simultaneous connections efficiently.)
+
+Brwoser Specfic Engines:
+1. V8 Engine (Google Chrome, Microsoft Edge)
+Used by: Google Chrome, Microsoft Edge
+V8 is an open-source JavaScript engine developed by Google for the Chrome browser. 
+It compiles JavaScript directly to native machine code to improve execution speed.
+
+2. SpiderMonkey (Mozilla Firefox)
+Used by: Mozilla Firefox
+SpiderMonkey is the JavaScript engine developed by Mozilla for Firefox. 
+It was the first JavaScript engine to implement the ECMAScript 6 standard and continuously receives updates for performance and security improvements.
+Includes advanced optimization techniques such as Just-In-Time (JIT) compilation and garbage collection.
+
+3. Chakra (Internet Explorer, Edge Legacy)
+Used by: Internet Explorer, older versions of Microsoft Edge
+Chakra was the JavaScript engine used in Microsoft's Internet Explorer and legacy versions of Microsoft Edge. It supports various ES6 features and has been optimized for both performance and security.
+Chakra's multi-threaded compilation allowed for parallel execution of JavaScript, improving performance.
+
+4. JavaScriptCore (WebKit, Safari)
+Used by: Safari, other WebKit-based browsers (such as earlier versions of Opera)
+
+Why to use Nodejs:
+Performance
+Real-Time capability
+Active community
+
+Version using:
+v20.5.0
+
+The stable version for production use is v22.11.0, which is part of the Long-Term Support (LTS) release line. LTS versions are recommended for production environments as they are stable and supported for a longer time.
+The latest version of Node.js is 23.3.0
+
+NPM:
+npm (Node Package Manager) is the default package manager for Node.js. 
+It is a crucial tool for managing and distributing JavaScript libraries and packages in the Node.js ecosystem.
+
+npm allows you to easily install, update, and manage JavaScript packages (libraries, tools, frameworks) used in your Node.js projects. 
+These packages can be shared across various projects and easily updated with new versions.
+
+Npm version using:
+10.5.1
+
+Command:
+npm install <package-name>: Installs a package and adds it to the node_modules directory.
+
+OOPS:
+Object-Oriented Programming (OOP) in JavaScript is a paradigm for organizing and structuring code based on objects. 
+Key OOP Concepts in JavaScript:
+Class:
+A class is a blueprint for creating objects.
+Object:
+Objects are instances of classes that contain properties and methods.
+(An Object is a unique entity that contains properties and methods. For example “a car” is a real-life Object, which has some characteristics like color, type, model, and horsepower and
+performs certain actions like driving. )
+Constructor:
+The constructor is a special method inside a class that gets invoked when a object of class is created. 
+It is used to initialize the object's properties and set up any necessary values when the object is instantiated.
+
+4 pillars of OOPS:
+1.Encapsulation
+Encapsulation involves bundling data (properties) and methods (functions) that operate on that data within a single unit, typically an object or a class. 
+It also involves restricting direct access to certain components of an object.
+2.Inheritance
+Inheritance allows one class to inherit properties and methods from another class, enabling code reuse and the creation of hierarchical relationships.
+3. Polymorphism
+Polymorphism means the same function can be performed in many ways.
+( refers to the ability of different objects or classes to respond to the same method or function in their own unique way. Essentially, polymorphism allows you to treat different objects in a similar way, 
+but each object may have its own specific behavior for a given method or function.)
+
+Types of Polymorphism in JavaScript:
+Compile-Time Polymorphism (Method Overloading): JavaScript does not support method overloading directly, but polymorphism can still be achieved through different implementations in child classes.
+Run-Time Polymorphism (Method Overriding): This is the most common form of polymorphism in JavaScript, where a method in a subclass overrides a method in a superclass.
+
+4. Abstraction
+Abstraction hides implementation details and exposes only the essential features of an object.
+
+Super keyword:
+The super keyword is used to call methods and access properties from a parent (or superclass) when a class is inherited. 
+It's particularly important in the context of inheritance.
+
+Features OOPS support in javascript:
+1. JavaScript supports encapsulation through classes, private fields (ES2022+), getter/setter methods, and closures.
+2. JavaScript supports abstraction through methods that hide implementation details, though it lacks traditional abstract classes.
+3. JavaScript supports inheritance through both prototype-based and class-based (ES6) inheritance.
+4. JavaScript supports polymorphism via method overriding and dynamic method dispatch.
+
+Event loop:
+t enables JavaScript to handle multiple tasks, such as user interactions, server responses, and timers, without freezing the main thread.
+(Execute code, Collect and process events, Execute queued sub-tasks, Handle multiple tasks without blocking the main thread, and Manage asynchronous operations.)
+
+The event loop works by: 
+Continuously checking the call stack and task queue.
+Moving callbacks from these queues to the call stack for execution.
+Maintaining the order and priority of callbacks.
+
+Type Conversion:
+refers to the process of converting one data type to another. 
+
+JavaScript provides two types of type conversion:
+1. Implicit Type Conversion (Type Coercion): This happens automatically when JavaScript converts a value from one type to another without the programmer explicitly specifying it.
+The engine handles this conversion when necessary.
+2. Explicit Type Conversion (Type Casting): This occurs when the programmer manually converts a value from one type to another using specific methods or operators.
+
+In JavaScript, type conversion often involves using built-in functions to explicitly convert values between different types. Here are some of the most commonly used functions for type conversion:
+
+1. String()
+Converts a value to a string.
+(String() can be used to convert numbers, booleans, objects, etc., into a string.)
+For objects, it will call the .toString() method.
+
+2. Number()
+Converts a value to a number. If the value cannot be converted to a valid number, it returns NaN.
+(Non-numeric strings will result in NaN)
+
+3. Boolean()
+Converts a value to a boolean. The following values are considered falsy in JavaScript: 0, '' (empty string), null, undefined, NaN, and false. All other values are considered truthy.
+
+4. parseInt()
+Converts a string to an integer (whole number). It reads the string from left to right and converts characters until it encounters a non-numeric character.
+If the string starts with a non-numeric character, parseInt() returns NaN.
+
+5. parseFloat()
+Converts a string to a floating-point number (decimal). It behaves similarly to parseInt(), but it includes the decimal part.
+Like parseInt(), if the string starts with non-numeric characters, parseFloat() returns NaN.
+
+6. Object()
+Converts a value to an object. 
+This function is typically used to wrap primitive types into objects.
+For primitive values (like numbers, strings, and booleans), it wraps them in corresponding object types (e.g., Number, String, Boolean).
+
+7. .toString()
+Converts an object or primitive type to a string. This method is available on all objects and many primitive values.
+
+8. .valueOf()
+This method returns the primitive value of an object. 
+It's used to retrieve the primitive value for objects like Date, Number, String, etc.
+
+Use Strict:
+first introduced in ECMAScript 5 (ES5) to assist in the writing of safer and more error-free code. 
+The “use strict” is the literal expression that enables strict mode for JavaScript. 
+It is added at the top of a JavaScript file, function, or block, and tells the JavaScript engine to run the code in strict mode. 
+In other words, this mode brings in a stricter set of rules for writing JavaScript with more warnings and throwing more errors.
+
+Comparison operator:
+In JavaScript, comparison operators are used to compare values and determine relationships between them.
+
+1. Equality (==)
+Compares the values of two operands to check if they are equal.
+Performs type coercion, meaning it converts the operands to the same type before comparing them.
+
+2. Compares both the value and type of two operands.
+No type coercion is performed. Both the value and the type must be exactly the same for the comparison to return true.
+
+3. Inequality (!=)
+Compares the values of two operands to check if they are not equal.
+Performs type coercion.
+
+4. Strict Inequality (!==)
+Purpose: Compares both the value and type of two operands to check if they are not equal.
+Behavior: No type coercion is performed. Both the value and the type must be different for the comparison to return true.
+
+5. Greater Than (>)
+Purpose: Checks if the value on the left is greater than the value on the right.
+
+6. Greater Than or Equal To (>=)
+Purpose: Checks if the value on the left is greater than or equal to the value on the right.
+
+7. Less Than (<)
+Purpose: Checks if the value on the left is less than the value on the right.
+
+8. Less Than or Equal To (<=)
+Purpose: Checks if the value on the left is less than or equal to the value on the right.
+
+9. Comparison with NaN
+Behavior: NaN is not equal to anything, including itself.
+
+10. Object Comparison
+Behavior: When comparing objects, JavaScript compares their references (i.e., memory addresses), not their contents. So, even if two objects have the same properties and values, they are considered unequal unless they refer to the same object in memory.
+
+Conditional Branching:
+allows you to execute different blocks of code based on whether a certain condition or set of conditions is true or false. This is typically done using if, else if, else, and switch statements.
+1. if Statement
+The if statement is used to execute a block of code if a condition is true.
+2. else Statement
+The else statement is used to execute a block of code if the condition in the if statement is false.
+3. else if Statement
+The else if statement allows you to test multiple conditions. If the first condition is false, it checks the second condition, and so on.
+4. switch Statement
+The switch statement is an alternative to multiple if...else if conditions when you need to compare one variable against multiple possible values.
+5. Ternary Operator
+The ternary operator is a shorthand for if...else. It returns one of two values based on a condition.
+
+Syntax:
+condition? value(if true): value(if false)
+
+Interaction:
+1. alert(): 
+This method displays a simple pop-up dialog box with a message. 
+It is used to inform the user or show a notification.
+
+2. prompt(): 
+This method displays a dialog box asking the user for input. It provides a text field where the user can type their response. The input value is returned as a string.
+
+3. confirm():
+This method displays a dialog box with a message and two buttons: "OK" and "Cancel". It returns true if the user clicks "OK" and false if the user clicks "Cancel".
+
+Logical operator and Nullish Coalescing operator:
+(both the Logical operator and Nullish Coalescing operator are used for handling values based on certain conditions.)
+
+Logical Operators (&&, ||)
+These are used to combine multiple conditions in a logical way.
+1. && (Logical AND): 
+if all true then true,otherwise false.
+2. || (Logical OR): 
+at least one should be true.
+
+Nullish Coalescing Operator (??):
+used to return the right-hand operand only if the left-hand operand is null or undefined. This is useful for providing default values when a variable might be null or undefined but is not affected by other falsy values (such as 0, false, or '').
+Syntax:
+let result = a ?? b;
+
+Polyfills:
+Polyfills allow developers to use newer JavaScript features while maintaining compatibility with older browsers or versions that do not support these features.
+
+Transpilers:
+In the context of JavaScript, a transpiler is typically used to convert modern JavaScript code (ES6+ or higher) into older versions (ES5) so that the code works on older browsers or environments that do not support the latest JavaScript syntax and features.
+
+
+
+
+
+
